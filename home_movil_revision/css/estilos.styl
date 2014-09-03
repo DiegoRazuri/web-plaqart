@@ -1,0 +1,837 @@
+@import "style.styl"
+
+body
+	width 100%
+	background-color white
+	margin 0
+	padding 0
+	border none
+
+	header
+		background-color white
+		height 85px
+		margin 0
+		padding 0
+		vertical-align top
+		width 100%
+		z-index 8
+		position fixed
+		top 0
+
+		nav
+			height 100%
+			padding 0
+			margin 0
+			vertical-align top
+
+			ul 
+				width 100%
+				padding 0
+				height 100%
+				margin 0
+				display block
+
+				#btnNavAni0
+					width 80%
+					span
+						display block
+						position absolute
+						top 20px
+						left 100%
+						font-weight normal
+						color #A4A4A4
+						font-size 2em
+
+				li
+					width 100%
+					border solid 1px #A4A4A4
+					background-color white
+					height 105px
+					margin 0
+					padding 0
+					float left
+					overflow hidden
+					display block
+
+
+					#btnNavAni1:hover
+						background-color #8cc63e
+
+						h4
+							color white
+						.lineBtn1
+							background-color white
+
+					#btnNavAni2:hover
+						background-color #f16420
+
+						h4
+							color white
+						.lineBtn2
+							background-color white
+
+					#btnNavAni3:hover
+						background-color #00adef
+
+						h4
+							color white
+						.lineBtn3
+							background-color white
+
+					#btnNavAni4:hover
+						background-color #652b90
+
+						h4
+							color white
+						.lineBtn4
+							background-color white
+
+					.bloqClaro, .bloqHov
+						width 100%
+						height 100%
+						cursor pointer
+						position relative
+						top 0
+						padding 0
+						margin 0
+
+						a
+							display block
+							height 100%
+							width 100%
+							margin 0
+							padding 0
+							text-decoration none
+
+
+							figure img
+								display block
+								height 70px
+								margin 15px auto
+
+							h4
+								font-size 15px
+								font-family offside
+								font-weight ligther
+								letter-spacing 1px
+								text-align right
+								position relative
+								top 25px
+								right 8%	
+								color #1C1C1C
+								float right
+								margin 0
+								padding 0
+								display inline-block
+								line-height 115%
+								
+							span
+								display inline-block
+								border none
+								height 32px
+								width 9px
+								vertical-align middle
+								float right
+								margin 0
+								padding 0 
+								position relative
+								top 27px
+								right 5.5%
+
+							.lineBtn1
+								background-color #8cc63e
+							.lineBtn2
+								background-color #f16420
+							.lineBtn3
+								background-color #00adef
+							.lineBtn4
+								background-color #652b90
+
+					.bloqHov
+						position relative
+						display none
+						top -85px
+						left -270px
+						z-index 17
+						background-color black
+						margin 0
+						padding 0
+
+						a
+							display block
+							height 100%
+							width 100%
+							margin 0
+							padding 0
+							text-decoration none
+
+							h4
+								color #FAFAFA
+
+							.lineBtn1, .lineBtn2, .lineBtn3, .lineBtn4
+								background-color #FAFAFA
+
+					.bloqClaro
+						display block
+						transition 0.4s
+
+					 
+				.blqmovil
+					height 83px
+					display none
+
+				.ultimoBtnNav
+					border-right none
+	#banner, #servicios, #portafolio, #promociones, #redes, #contacto
+		position relative
+		top 80px
+		left 0
+		height 630px
+		width 100%
+		box-shadow 0px 4px 30px #1C1C1C
+		overflow hidden
+
+
+	#banner
+		z-index 7
+		background-color #FFFFFF
+		height 480px
+		width 100%
+
+		.wrapperBanner
+			display block
+			margin 0 auto
+			width 300px
+
+			.slide
+				display none
+				vertical-align top
+				height 500px
+				width 70%
+				margin 0px auto
+				padding 0
+				position absolute
+				top 0
+
+
+
+			.slide_visible
+				display block
+
+			article
+				figure
+					.iconazos, txtBanner
+						display inline-block
+
+
+			article figure .iconazos
+				display inline-block
+				margin 0
+				padding 0
+				position relative 
+				top 60px
+				height 300px
+
+			article figure .txtBanner
+				display inline-block
+				margin 0
+				padding 0
+				position relative 
+				top 50px
+				height 70px
+				
+
+	#servicios
+		background-color #f16420
+		z-index 6
+		height 930px
+
+
+		p
+			font-family offside
+			font-size 0.9em
+			letter-spacing 1px
+			font-weight normal
+			text-align center
+			color white
+			width 60%
+			margin 0 auto
+			position relative
+			top 95px
+
+
+		.wrapper
+			width 300px
+			margin 0 auto
+
+			.BtnServicio
+				width 180px
+				margin 0 12px
+				position relative
+				top 130px
+				vertical-align top
+				display inline-block
+
+
+				figure
+					display block
+					margin 0 auto
+					width 140px
+					vertical-align top
+
+					img
+						width 140px
+						height 100%
+
+				h2
+					font-family Roboto Slab
+					font-weight normal
+					letter-spacing 1px
+					font-size 1em
+					color white
+					position relative
+					top 5px
+					width 160px
+					margin 0 auto
+					vertical-align top
+					text-align center
+					border-bottom solid 1px
+					border-color #963b04
+					padding-bottom 5px
+
+
+
+				ul
+					padding 0 0 0 20px
+					li
+						text-decoration none
+						list-style-type none
+						font-family open sans
+						font-weight light
+						font-size 0.8em	
+						color #fbaf3f
+						margin-top 0px
+						height 15px
+						text-align left
+
+					li:before
+						content: ">"
+						margin-right 5px
+						font-family open sans
+						font-size 0.8em
+						color #963b04
+
+	#portafolio
+		z-index 5
+		background-color #00adef
+		height 990px
+
+		.listaBotonesPorta
+			margin 0 auto
+			padding 0
+			position relative	
+			top 105px
+			width 100%
+			li
+				text-decoration
+				list-style-type none
+				display inline-block
+				margin-right -4px
+				padding 6px 0 0 0
+				font-family open sans
+				font-weight 500
+				font-size 1em
+				color #15619d
+				text-align center
+				vertical-align middle
+				letter-spacing 1px
+				cursor pointer
+				width 49.5%
+				height 30px
+				background: #7dd3f6;
+				position: relative;
+				border solid 1px #15619d
+				transition all 0.4s
+
+			li:hover
+				background-color #15619d
+				color white
+
+			.botonesPortaUltimo
+				border-right none
+
+			.botonActivado
+				background-color #15619d
+
+			.ui-selected
+				background-color #15619d
+				color white
+
+		#vitrina
+			width 100%
+			margin 0 auto
+			position relative
+			top 135px
+			padding 0
+			list-style-type none
+
+			.vinetas
+				list-style-type none
+				padding 0
+				float right
+				text-decoration none
+				cursor pointer
+				width 50%
+				margin 0
+				height 330px
+				background: #7dd3f6;
+				position: relative;
+				overflow hidden
+
+				a
+					text-decoration none
+					width 100%
+					height 100%
+					border none
+					display block
+
+					figure 
+						display inline-block
+						width 100%
+						height 100%
+						margin 0
+						padding 0
+						position relative
+						top 0
+						z-index 0
+
+						img
+							width 100%
+							height 400px
+							margin 0
+							padding 0
+
+					.wrapperVinetas
+						display block
+						width 100%
+						height 100%
+						transition 1s
+						position relative
+						top -404px
+						z-index 9999
+
+
+						.sombra
+							display block
+							boder solid 1px red
+							background-color #15619d
+							width 100%
+							height 100%
+							position relative
+							opacity 0.5
+							top 0
+							margin 0
+							padding 0
+
+						.descripcion
+							border-left solid 2px
+							border-color #7dd3f6
+							width 60%
+							margin 0 auto
+							padding 0 0 0 7px
+							display block
+							vertical-align middle
+							position relative
+							opacity 1
+							top -190px
+							z-index 9999
+
+							h5
+								margin 0
+								padding 0
+								font-family open sans
+								font-size 0.9em
+								font-weight bold
+								color white
+								letter-spacing 1px
+
+							.categoria
+								margin 0
+								padding 0
+								font-family open sans
+								font-size 0.8em
+								font-weight light
+								color white
+
+							.cliente
+								margin 0
+								padding 0
+								font-family open sans
+								font-size 0.8em
+								font-weight bold
+								letter-spacing 1px
+								font-style italic
+								color #7dd3f6
+
+			.vinetas:hover
+				a .wrapperVinetas
+					-webkit-transform rotateY(90deg)
+					transform rotateY(90deg)
+					opacity 0
+
+
+	#promociones
+		z-index 4
+		background-color #652b90
+		height 560px
+
+		.slidePorta
+			display none
+			vertical-align top
+			margin 0px auto
+			height 380px
+			width 100%
+			padding 0
+			position absolute
+			top 225px
+			overflow hidden
+
+			figure
+				width 100%
+
+				img
+					width 100%
+
+
+
+		.slide_visible_Porta
+			display block
+
+	#redes
+		z-index 3
+		background-color #8cc63e
+		height 460px
+
+		.descripSegmentoRedes
+			display none
+			font-family offside
+			font-weight normal
+			font-size 1em
+			color white
+			width 600px
+			text-align center
+			margin 0 auto
+			padding 0
+			position relative
+			top 115px
+
+		ul
+			width 470px
+			margin 0 auto
+			padding 0
+			position relative
+			top 110px
+
+			.btnRedes
+
+				width 44%
+				display inline-block 
+				margin 0 8px
+				padding 0
+
+				a
+					text-decoration none
+					display block
+					margin 0
+					padding 0
+					width 100%
+
+
+					figure, p
+						display inline-block
+					figure
+						width 65px
+						height 65px
+						padding 3px
+						margin 0
+
+
+						.btnOff
+							display block
+							height 100%
+							margin 0
+							padding 0
+							position relative
+							top 0
+							z-index 8
+
+						.btnOn
+							display none
+							height 87%
+							margin 0
+							padding 0
+							position absolute
+							top 3px
+							z-index 7
+
+						
+
+					p
+						margin 0
+						padding 0
+						font-family roboto slab
+						font-size 1.8em
+						font-weight bold
+						color #618037
+						vertical-align top
+						position relative
+						top 20px
+						left 0px
+						transition 0.5s
+				a:hover
+					p
+						color white
+
+	#Contacto
+		height 900px
+		background-image url("Fondo-ciudad.png")
+		background-repeat:no-repeat;
+		background-size: 100% 100%;
+		position relative
+		top 80px
+		z-index 2
+
+		#mensajeExito, #mensajeError
+			width 300px
+			display none
+			background-color white
+			border solid 2px black
+			position relative 
+			top -350px
+			padding 30px
+			margin 0 auto
+
+		
+		#wrapperContacto
+			height 100%
+			width 100%
+			display block
+			border solid 1px red
+
+				p
+					width 75%
+					margin 0 auto
+					vertical-align middle
+					color black
+					text-align justify
+					font-family open sans
+					font-size 1em
+					font-weight lighter
+
+
+			.descripContacto
+				font-family offside
+				font-size 0.9em
+				font-weight lighter
+				color white
+				width 80%
+				margin 0 auto
+				position relative
+				top 100px
+				text-align center
+
+			.wrapperInfo_Form
+				display block
+				width 80%
+				margin 0 auto
+				position relative
+				top 0
+
+				.logoplaqartcontacto
+					display block
+					width 170px
+					margin 0 auto
+					padding 0
+					position relative
+					top 140px
+					img
+						width 100%
+						margin 0
+						padding 0
+
+				.div1
+					width 260px
+					margin 0 auto
+					padding 0
+					position relative
+					top 160px
+
+
+					.imgUbicacion img, .imgTelf img
+						width 30px
+						margin 15px 0 0 0
+						padding 0
+
+					.imgTelf img
+						position relative
+						top 15px
+					p
+						float right
+						font-family Roboto slab
+						font-size 1em
+						font-weight light 
+						color white
+						width 200px
+						margin 15px 0 0 0
+						padding 0
+						position relative
+						top -65px
+
+				.div2
+					height 270px
+					width 100%
+					margin 0 auto
+					padding 0
+					position relative
+					top 200px
+					background-image url("ContactoForm.png")
+					background-repeat:no-repeat;
+					background-size: 100% 100%;
+
+					form
+						width 100%
+						height 100%
+						display block
+						margin 0
+						padding 0
+						vertical-align top
+						position relative
+						top -70px
+
+						.inputsForm, textarea
+							background-color transparent
+							border none
+							width 93%
+							padding 10px 13px 7px 13px
+							margin 0
+							font-family open sans
+							font-size 0.9em
+							color white
+							position relative
+							0
+
+
+						.inputsForm
+							height 18px
+
+						.inputsForm:focus
+							outline 0px
+
+
+						textarea
+							height 127px
+
+						textarea:focus
+							outline 0px
+							
+						.btnForm
+							background-color transparent
+							border solid 1px white
+							height 33px
+							width 100px
+							padding 3px
+							margin 0
+							font-family open sans
+							font-size 0.9em
+							font-weight bold
+							color white
+							position relative
+							top 25px
+							float right
+
+
+	#footer
+		z-index 1
+		background-color black
+		height 200px
+		display block
+		margin 0
+		padding 0
+
+		div
+			display block
+			width 70%
+			margin 0 auto
+			padding 0
+			position relative
+			top 90px
+			text-align center
+
+			figure, p
+				display inline-block
+				
+
+			figure
+				width 110px
+				vertical-align middle
+				img
+					width 100%
+
+
+			p
+				font-family open sans
+				font-weight lighter
+				color white
+				margin-left 10px
+				font-size 1em
+
+			p:before
+				content: "•"
+				color white
+				font-weight bold
+				margin-right 7px
+
+	.titulosSegmentos
+		font-family offside
+		font-size 2.5em
+		font-weight normal
+		color white
+		letter-spacing 2px
+		margin 0 auto
+		text-align center
+		position relative
+		top 70px
+		border none
+
+	.delineado01
+		width 70%
+		margin 0 auto
+		position relative
+		top 80px
+
+		img
+			height 100%
+			width 100%
+		
+		
+
+	.btnAvanzar, .btnAtras
+		display none
+		position relative
+		cursor pointer
+		top 300px
+		z-index 50
+		img
+			height 100%
+			width 55px
+			display inline-block
+
+	.btnAvanzar
+		position relative
+		left 1145px
+
+	.btnAtras
+		position relative
+		left 90px
+
+@import "responsive.styl"
