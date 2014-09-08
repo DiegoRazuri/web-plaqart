@@ -2,30 +2,30 @@
 
 var baseDiseno = [
 	{
-		titulo : "TITULO1 Diseno",
-		servicio : "SERVICIO1",
-		cliente : "CLIENTE 1",
+		titulo : "PAPELERIA COMERCIAL",
+		servicio : "DISEÑO",
+		cliente : "SCENS",
 		img : "'img/portafolio_img/HomeS.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/scensPapeleria.html'"
 	},
 	{
-		titulo : "TITULO2 Diseno",
-		servicio : "SERVICIO2",
-		cliente : "CLIENTE 2",
+		titulo : "VOLANTES Y PAPELERIA",
+		servicio : "DISEÑO",
+		cliente : "PROTEO",
 		img : "'img/portafolio_img/HomeProte.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/proteoPapeleria.html'"
 	},
 	{
-		titulo : "TITULO3 Diseno",
-		servicio : "SERVICIO3",
-		cliente : "CLIENTE 3",
+		titulo : "LOGOTIPO Y CARPETAS",
+		servicio : "DISEÑO",
+		cliente : "SIGMA EQUIPMENT",
 		img : "'img/portafolio_img/HomeSigma.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/diseno-logotipo-sigma.html'"
 	},
 	{
-		titulo : "TITULO4 Diseno",
-		servicio : "SERVICIO4",
-		cliente : "CLIENTE 4",
+		titulo : "PAPELERIA NEGOCIOS",
+		servicio : "DISEÑO",
+		cliente : "XPRESS",
 		img : "'img/portafolio_img/HomeX.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/xpressPapeleria.html'"
 	}
@@ -109,16 +109,16 @@ var baseMerch = [
 		enlace : "'http://www.plaqart.com/portafolio/indecopiMaletines.html'"
 	},
 	{
-		titulo : "TITULO3 MERCH",
-		servicio : "SERVICIO3",
-		cliente : "CLIENTE 3",
+		titulo : "LIBRETAS Y LAPICEROS",
+		servicio : "IMPRESION Y GRABADO",
+		cliente : "TECNOFOR",
 		img : "'img/portafolio_img/HomeT.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/merchandising-tecnofor.html'"
 	},
 	{
-		titulo : "TITULO4 MERCH",
-		servicio : "SERVICIO4",
-		cliente : "CLIENTE 4",
+		titulo : "MERCHANDISING",
+		servicio : "VENTA Y GRABADO",
+		cliente : "",
 		img : "'img/portafolio_img/HomeP.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/merchandising-innovador.html'"
 	}
