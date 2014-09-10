@@ -6,11 +6,8 @@
 	$mensaje .= "Empresa: ".$_POST['empresa']."  -  ";
 	$mensaje .= "Correo: ".$_POST['correo']."  -  ";
 
-	if(mail($destino, $nombre, $mensaje, $desde)){
-		echo("1");
-	}else{
-		echo("0");
-	}
-	
+	mail($destino, $nombre, $mensaje, $desde);
+	echo("1");
+
 ?>
 
