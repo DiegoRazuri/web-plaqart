@@ -71,23 +71,23 @@ var baseImp = [
 		enlace : "'http://www.plaqart.com/portafolio/indecopiVallas.html'"
 	},
 	{
-		titulo : "PAPELERÍA TURISMO",
-		servicio : "IMPRESIÓN Y DISEÑO",
-		cliente : "PROTEO",
+		titulo : "AGENDAS PUBLICITARIAS",
+		servicio : "IMPRESIÓN Y ACABADOS",
+		cliente : "PEZWEON",
 		img : "'img/portafolio_img/HomePz.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/pezweonPapeleria.html'"
 	},
 	{
-		titulo : "AGENDAS",
+		titulo : "VINILES PARA CARROS",
 		servicio : "IMPRESIÓN Y ACABADOS",
-		cliente : "PEZWEON",
+		cliente : "SCENS",
 		img : "'img/portafolio_img/HomeAS.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/impresiones-para-carros.html'"
 	},
 	{
-		titulo : "PAPELERÍA COMERCIAL",
+		titulo : "CALENDARIOS DE ESCRITORIO",
 		servicio : "IMPRESION Y DISEÑO",
-		cliente : "SCENS",
+		cliente : "VEMAEQUIP",
 		img : "'img/portafolio_img/HomeV.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/impresion-calendarios.html'"
 	}
