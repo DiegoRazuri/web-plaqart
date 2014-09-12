@@ -1,5 +1,5 @@
 <?php
-	$destino = "diegorazuri@plaqart.com";
+	$destino = "ventas@plaqart.com";
 	$desde	 = "From:". "FormularioWeb";
 	$nombre	 = $_POST['nombres'];
 	$mensaje = $_POST['mensaje']."  -  ";
