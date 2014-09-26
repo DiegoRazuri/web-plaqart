@@ -2,60 +2,74 @@
 
 var baseDiseno = [
 	{
-		titulo : "PAPELERIA COMERCIAL",
-		servicio : "DISEÑO",
+		titulo : "IDENTIDAD DE MARCA",
+		servicio : "DISEÑO GRÁFICO",
 		cliente : "SCENS",
 		img : "'img/portafolio_img/HomeS.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/scensPapeleria.html'"
 	},
 	{
-		titulo : "VOLANTES Y PAPELERIA",
-		servicio : "DISEÑO",
+		titulo : "IDENTIDAD DE MARCA",
+		servicio : "DISEÑO GRÁFICO",
 		cliente : "PROTEO",
 		img : "'img/portafolio_img/HomeProte.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/proteoPapeleria.html'"
 	},
 	{
-		titulo : "LOGOTIPO Y CARPETAS",
-		servicio : "DISEÑO",
+		titulo : "IDENTIDAD DE MARCA",
+		servicio : "DISEÑO GRÁFICO",
 		cliente : "SIGMA EQUIPMENT",
 		img : "'img/portafolio_img/HomeSigma.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/diseno-logotipo-sigma.html'"
 	},
 	{
-		titulo : "PAPELERIA NEGOCIOS",
-		servicio : "DISEÑO",
+		titulo : "IDENTIDAD DE MARCA",
+		servicio : "DISEÑO GRÁFICO",
 		cliente : "XPRESS",
 		img : "'img/portafolio_img/HomeX.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/xpressPapeleria.html'"
+	},
+	{
+		titulo : "IMAGEN DE EVENTO",
+		servicio : "DISEÑO GRÁFICO",
+		cliente : "INDECOPI",
+		img : "'img/portafolio_img/HomeID.jpg'",
+		enlace : "'http://www.plaqart.com/portafolio/diseno-indecopi.html'"
+	},
+	{
+		titulo : "LOGOTIPOS",
+		servicio : "DISEÑO GRÁFICO",
+		cliente : "VARIOS",
+		img : "'img/portafolio_img/HomeLogos.jpg'",
+		enlace : "'http://www.plaqart.com/portafolio/diseno-logos.html'"
 	}
 ];
 
 var baseDesarrolloWeb = [
 	{
 		titulo : "WEB INDUSTRIAL",
-		servicio : "DESARROLLO WEB Y DISEÑO",
+		servicio : "DESARROLLO WEB",
 		cliente : "GEO SYSTEMS",
 		img : "'img/portafolio_img/HomeGW.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/GeoWeb.html'"
 	},
 	{
 		titulo : "WEB DE TURISMO",
-		servicio : "DESARROLLO WEB, SESSIÓN FOTOGRÁFICA Y DISEÑO",
+		servicio : "DESARROLLO WEB",
 		cliente : "PROTEO",
 		img : "'img/portafolio_img/HomePW.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/proteoWeb.html'"
 	},
 	{
-		titulo : "WEB PRODUCTO MASIVO",
-		servicio : "DESARROLLO WEB Y DISEÑO",
+		titulo : "TIENDA VIRTUAL",
+		servicio : "DESARROLLO WEB",
 		cliente : "SCENS",
 		img : "'img/portafolio_img/HomeSP.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/scensWeb.html'"
 	},
 	{
-		titulo : "WEB INDUSTRIA AUTOMOTRIZ",
-		servicio : "DESARROLLO WEB Y EDICIÓN DE VIDEO",
+		titulo : "CATÁLOGO VIRTUAL",
+		servicio : "DESARROLLO WEB",
 		cliente : "VEMAEQUIP",
 		img : "'img/portafolio_img/HomeVW.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/vemaequipWeb.html'"
@@ -65,60 +79,67 @@ var baseDesarrolloWeb = [
 var baseImp = [
 	{
 		titulo : "VALLAS PUBLICITARIAS",
-		servicio : "IMPRESIÓN E INSTALACIÓN",
+		servicio : "IMPRENTA",
 		cliente : "INDECOPI",
 		img : "'img/portafolio_img/HomeVI.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/indecopiVallas.html'"
 	},
 	{
 		titulo : "AGENDAS PUBLICITARIAS",
-		servicio : "IMPRESIÓN Y ACABADOS",
+		servicio : "IMPRENTA",
 		cliente : "PEZWEON",
 		img : "'img/portafolio_img/HomePz.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/pezweonPapeleria.html'"
 	},
 	{
-		titulo : "VINILES PARA CARROS",
-		servicio : "IMPRESIÓN Y ACABADOS",
+		titulo : "VINILES AUTOADHESIVOS",
+		servicio : "IMPRENTA",
 		cliente : "SCENS",
 		img : "'img/portafolio_img/HomeAS.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/impresiones-para-carros.html'"
 	},
 	{
 		titulo : "CALENDARIOS DE ESCRITORIO",
-		servicio : "IMPRESION Y DISEÑO",
+		servicio : "IMPRENTA",
 		cliente : "VEMAEQUIP",
 		img : "'img/portafolio_img/HomeV.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/impresion-calendarios.html'"
+	},
+	{
+		titulo : "IMAGEN DE EVENTO",
+		servicio : "IMPRENTA",
+		cliente : "CGR",
+		img : "'img/portafolio_img/HomeCGR.jpg'",
+		enlace : "'http://www.plaqart.com/portafolio/imprenta-CGR.html'"
 	}
 ];
 
 var baseMerch = [
 	{
 		titulo : "ARTICULOS PUBLICITARIOS",
-		servicio : "IMPRESIÓN Y ACABADOS",
+		servicio : "MERCHANDISING",
 		cliente : "INDECOPI",
 		img : "'img/portafolio_img/HomeL.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/indecopiMerch.html'"
 	},
 	{
 		titulo : "MALETINES EJECUTIVOS",
-		servicio : "CONFECCIÓN Y DISEÑO",
+		servicio : "MERCHANDISING",
 		cliente : "INDECOPI",
 		img : "'img/portafolio_img/HomeI.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/indecopiMaletines.html'"
 	},
 	{
-		titulo : "LIBRETAS Y LAPICEROS",
-		servicio : "IMPRESION Y GRABADO",
+		titulo : "CONFERENCIA",
+		servicio : "MERCHANDISING",
 		cliente : "TECNOFOR",
 		img : "'img/portafolio_img/HomeT.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/merchandising-tecnofor.html'"
 	},
 	{
-		titulo : "MERCHANDISING",
-		servicio : "VENTA Y GRABADO",
-		cliente : "",
+		titulo : "FIDELIZACIÓN",
+		servicio : "MERCHANDISING",
+		cliente : "PLAQART",
 		img : "'img/portafolio_img/HomeP.jpg'",
 		enlace : "'http://www.plaqart.com/portafolio/merchandising-innovador.html'"
 	}
@@ -142,39 +163,6 @@ $(document).ready(function(){
 	});
 
 
-	//RENDER DE EL PORTAFOLIO
-
-	var itemsTemplate = _.template($('#items-template').html());
-	var activarRenderBaseDiseno = itemsTemplate({ conexionTemplate : baseDiseno});
-	var activarRenderBaseWeb = itemsTemplate({ conexionTemplate : baseDesarrolloWeb});
-	var activarRenderBaseImp = itemsTemplate({ conexionTemplate : baseImp});
-	var activarRenderBaseMerch = itemsTemplate({ conexionTemplate : baseMerch});
-
-
-	$('#vitrina').html(activarRenderBaseDiseno);
-
-	// INTERACCION DE BOTONES DEL PORTAFOLIO
-
-	$(".listaBotonesPorta li").on("click", function(){
-		var idbtn = $(this).attr("id");
-
-		switch(idbtn){
-			case "btnDiseno" : $('#vitrina').html(activarRenderBaseDiseno);
-				break;
-
-			case "btnWeb" : $('#vitrina').html(activarRenderBaseWeb);
-				break;
-			case "btnImp" : $('#vitrina').html(activarRenderBaseImp);
-				break;
-			case "btnMerch" : $('#vitrina').html(activarRenderBaseMerch);
-				break;
-			default: alert("Ocurrio un error");
-
-		};
-		
-	});
-
-	$(".listaBotonesPorta").selectable();
 
 	// ANIMACION DE BOTONES REDES
 
@@ -287,4 +275,48 @@ $(document).ready(function(){
 		});
 	}
 
+	
+
+
+	//RENDER DE EL PORTAFOLIO
+
+	var itemsTemplate = _.template($('#items-template').html());
+	var activarRenderBaseDiseno = itemsTemplate({ conexionTemplate : baseDiseno});
+	var activarRenderBaseWeb = itemsTemplate({ conexionTemplate : baseDesarrolloWeb});
+	var activarRenderBaseImp = itemsTemplate({ conexionTemplate : baseImp});
+	var activarRenderBaseMerch = itemsTemplate({ conexionTemplate : baseMerch});
+
+
+	$('#vitrina').html(activarRenderBaseDiseno);
+
+	// INTERACCION DE BOTONES DEL PORTAFOLIO
+
+	$(".listaBotonesPorta li").on("click", function(){
+		var idbtn = $(this).attr("id");
+
+		switch(idbtn){
+			case "btnDiseno" : 
+				$('#vitrina').html(activarRenderBaseDiseno);
+				break;
+			case "btnWeb" : 
+				$('#vitrina').html(activarRenderBaseWeb);
+				break;
+			case "btnImp" : 
+				$('#vitrina').html(activarRenderBaseImp);
+				break;
+			case "btnMerch" : 
+				$('#vitrina').html(activarRenderBaseMerch);
+				break;
+			default: alert("Ocurrio un error");
+
+		};
+		
+	});
+
+	$(".listaBotonesPorta").selectable();
+
+	//ejecuto el carrusel
+
+	//carrusel($("#marco"), $("#next"), $("#prev"));
+	
 });

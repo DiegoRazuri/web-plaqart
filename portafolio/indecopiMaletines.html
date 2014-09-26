@@ -13,6 +13,7 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
         <script src="js/vendor/ui/jquery-ui.js"></script>
+        <script src="js/vendor/underscore.js"></script>
 
     </head>
     <body>
@@ -47,7 +48,7 @@
                     </li>
                     <li id="btnNav3" class="blqmovil">
                         <div class="bloqClaro btnSelec" id="btnNavAni3">
-                            <a href="http://www.plaqart.com/#portafolioAncla" class="scrolleable">
+                            <a href="#portafolio" class="scrolleable">
                                 <span class="lineBtn3 btnrayas"></span>
                                 <h4>NUESTRO<br>PORTAFOLIO</h4>
                             </a>
@@ -68,9 +69,9 @@
         <section id="contenedor">
             <div class="wrapperPrincipal">
                 <div id="descripcionWork" class="descripcionTrabajo">
-                    <h2>MALETINES EJECUTIVOS</h2>
-                    <p>Los maletines para laptops son de gran utilidad para reuniones de ejecutivos. Es una forma indirecta de decir que nuestra empresa se preocupa por cada detalle y no pierde cuidado con la comodidad de sus colaboradores. Estos maletines fueron diseñados y confeccionados por nosotros. Utilizamos cuero napa para el exterior y tela taslan en el interior con material microporoso reforzado.</p>
-                    <h1>CONFECCIÓN DE MALETINES PARA LAPTOPS<br> INDECOPI</h1>
+                    <h2>NO HAY PROBLEMA QUE NO PODAMOS RESOLVER JUNTOS</h2>
+                    <p>Uno de los objetivos de nuestro equipo es ayudar a nuestros clientes, ya sea asesorándolos o solo brindando consejos que los lleve a su solución. Con este caso no hubo excepción, Indecopi nos consultó si podíamos asistirlos con un obsequio para su equipo interno. Nos pusimos a trabajar y confeccionamos unos maletines ejecutivos hechos a base de cuero napa negro con bolsillo interno para laptop, forrado con tela taslán en el interior y reforzado con material micro poroso para la protección del computador.</p>
+                    <h1>CONFECCIÓN DE MALETINES EJECUTIVOS<br> INDECOPI</h1>
                 </div>
                 <div class="bloques" id="figura1">
                     <figure>
@@ -99,6 +100,42 @@
                 </div>
             </div>
 
+            <section id="portafolio">
+                <span id="portafolioAncla"></span>
+                <h4 class="titulosSegmentos">MIRA NUESTRO PORTAFOLIO</h4>
+                <figure class="delineado01"><img src="img/Subraya02.png"></figure>
+                <!--<figure class="btnAtras">
+                    <img src="img/PortafolioFlechaIzquierdaOff.png">
+                </figure>
+                <figure class="btnAvanzar">
+                    <img src="img/PortafolioFlechaDerechaOff.png">   
+                </figure>-->
+                <ul class="listaBotonesPorta">
+                    <li class="botonesPorta " id="btnDiseno">Diseño</li>
+                    <li class="botonesPorta" id="btnWeb">Desarrollo Web</li>
+                    <li class="botonesPorta btnUltimos" id="btnImp">Imprenta</li>
+                    <li class="botonesPorta btnUltimos botonesPortaUltimo ui-selected" id="btnMerch">Merchandising</li>
+                </ul>
+                <div id="marco">
+                    <ul id="vitrina">
+                        
+                    <!-- ACA SE INSERTA EL CONTENIDO DE LA PLANTILLA DE UNDERSCORE -->
+
+                    </ul>
+                </div>
+                <!--<div class="wrapperPaginacionPorta">
+                    <span class="paginacionPorta paginaVisiblePorta" id="slide1pagPorta"></span>
+                    <span class="paginacionPorta" id="slide2pagPorta"></span>
+                    <span class="paginacionPorta" id="slide3pagPorta"></span>
+                </div>-->
+                <figure class="btnAtras" id="prev">
+                    <img src="img/PortafolioFlechaIzquierdaOff.png">
+                </figure>
+                <figure class="btnAvanzar" id="next">
+                    <img src="img/PortafolioFlechaDerechaOff.png">   
+                </figure>
+            </section>
+
         </section>
         <section id="footer">
             <div>
@@ -112,6 +149,30 @@
 
         <script src="js/main.js"></script>
         <script src="js/script.js"></script>
+
+        <script type="text/template" id="items-template">
+            <% _.each(conexionTemplate, function(variableLlave){ %>
+                <li class="vinetas" id="viñeta1">
+                    <a target="_blank" href= <%= variableLlave.enlace%>>
+                        <figure class="lienzo">
+                            <img src=<%= variableLlave.img%> class="foto" alt="trabajos de plaqart" title="trabajos de plaqart">
+                        </figure>
+                        <div class="wrapperVinetas">
+                            <div class="sombra">
+                            </div>
+                            <span class="descripcion">
+                                <h5 class="trabajo"><%= variableLlave.titulo %></h5>
+                                <p class="categoria"><%= variableLlave.servicio %></p>
+                                <p class="cliente"><%= variableLlave.cliente%></p>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+
+            <% }); %>
+        </script>
+        <script type="text/javascript" src="js/carrusel.js"></script>
+
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

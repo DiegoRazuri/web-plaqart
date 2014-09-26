@@ -401,7 +401,7 @@ body
 	#portafolio
 		z-index 5
 		background-color #00adef
-		height 840px
+		height 580px
 
 		#portafolioAncla
 			border solid 1px red
@@ -452,118 +452,147 @@ body
 			.btnUltimos
 				border-top solid 1px #15619d
 
-		#vitrina
-			width 100%
-			margin 0 auto
+		#marco
+			display block
 			position relative
-			top 135px
-			padding 0
-			list-style-type none
+			top 140px
+			z-index 6
+			height 276px
+			width 320px
+			margin 0 auto
+			overflow hidden
 
-			.vinetas
-				list-style-type none
-				padding 0
-				text-decoration none
-				cursor pointer
-				width 50%
-				margin 0
+			#vitrina
+				width 320px
 				height 274px
-				float left
-				background: #7dd3f6;
-				position: relative;
-				overflow hidden
+				margin 0 auto
+				position relative
+				top 0
+				padding 0
+				list-style-type none
 
-				a
+				.vinetas
+					list-style-type none
+					padding 0
 					text-decoration none
-					width 100%
-					height 100%
-					border none
-					display block
+					cursor pointer
+					width 160px
+					margin 0
+					height 274px
+					float left
+					background: #7dd3f6;
+					position: relative;
+					overflow hidden
 
-					figure 
-						display inline-block
+					a
+						text-decoration none
 						width 100%
 						height 100%
-						margin 0
-						padding 0
-						position relative
-						top 0
-						z-index 0
-
-						img
-							width 100%
-							height 274px
-							margin 0
-							padding 0
-
-					.wrapperVinetas
+						border none
 						display block
-						width 100%
-						height 100%
-						transition 1s
-						position relative
-						top -278px
-						z-index 9999
 
-
-						.sombra
-							display block
-							background-color #15619d
+						figure 
+							display inline-block
 							width 100%
 							height 100%
-							position relative
-							opacity 0.6
-							top 0
 							margin 0
 							padding 0
-
-						.descripcion
-							border-left solid 2px
-							border-color #7dd3f6
-							width 60%
-							margin 0 auto
-							padding 0 0 0 7px
-							display block
-							vertical-align middle
 							position relative
-							opacity 1
-							top -190px
+							top 0
+							z-index 0
+
+							img
+								width 100%
+								height 274px
+								margin 0
+								padding 0
+
+						.wrapperVinetas
+							display block
+							width 100%
+							height 100%
+							transition 1s
+							position relative
+							top -278px
 							z-index 9999
 
-							h5
+
+							.sombra
+								display block
+								background-color #15619d
+								width 100%
+								height 100%
+								position relative
+								opacity 0.6
+								top 0
 								margin 0
 								padding 0
-								font-family open sans
-								font-size 0.9em
-								font-weight bold
-								color white
-								letter-spacing 1px
 
-							.categoria
-								margin 0
-								padding 0
-								font-family open sans
-								font-size 0.8em
-								font-weight light
-								font-style italic
-								color white
+							.descripcion
+								border-left solid 2px
+								border-color #7dd3f6
+								width 60%
+								margin 0 auto
+								padding 0 0 0 7px
+								display block
+								vertical-align middle
+								position relative
+								opacity 1
+								top -190px
+								z-index 9999
 
-							.cliente
-								margin 0
-								padding 0
-								font-family open sans
-								font-size 0.8em
-								font-weight 900
-								letter-spacing 1px
-								font-style normal
-								color #7dd3f6
+								h5
+									margin 0
+									padding 0
+									font-family open sans
+									font-size 0.9em
+									font-weight bold
+									color white
+									letter-spacing 1px
 
-			.vinetas:hover
-				a .wrapperVinetas
-					-webkit-transform rotateY(90deg)
-					transform rotateY(90deg)
-					opacity 0
+								.categoria
+									margin 0
+									padding 0
+									font-family open sans
+									font-size 0.8em
+									font-weight light
+									font-style italic
+									color white
 
+								.cliente
+									margin 0
+									padding 0
+									font-family open sans
+									font-size 0.8em
+									font-weight 900
+									letter-spacing 1px
+									font-style normal
+									color #7dd3f6
+
+				.vinetas:hover
+					a .wrapperVinetas
+						-webkit-transform rotateY(90deg)
+						transform rotateY(90deg)
+						opacity 0
+		.wrapperPaginacionPorta
+			height 20px
+			width 120px
+			margin 0 auto
+			position relative
+			top 160px
+
+			.paginacionPorta
+
+
+			.paginacionPorta:before
+				content: "•"
+				color #E0F8F7
+				font-weight bold
+				font-size 25px
+				margin 0 7px
+
+			.paginaVisiblePorta:before
+				color #15619d
 
 	#promociones
 		display none
@@ -581,7 +610,7 @@ body
 				width 100%
 				padding 0
 				position absolute
-				top 180px
+				top 160px
 				overflow hidden
 
 				figure
@@ -594,6 +623,27 @@ body
 
 			.slide_visible_Porta
 				display block
+
+		.wrapperPaginacion
+			height 20px
+			width 120px
+			margin 0 auto
+			position relative
+			top 430px
+
+			.paginacionPromo
+
+
+			.paginacionPromo:before
+				content: "•"
+				color #1C1C1C
+				font-weight bold
+				font-size 25px
+				margin 0 7px
+
+			.paginaVisiblePromo:before
+				color white
+				
 
 	#redes
 		z-index 3
@@ -903,22 +953,24 @@ body
 		
 
 	.btnAvanzar, .btnAtras
-		display none
+		display inline-block
 		position relative
 		cursor pointer
-		top 300px
+		top 95px
 		z-index 50
 		img
 			height 100%
-			width 55px
+			width 35px
 			display inline-block
 
 	.btnAvanzar
 		position relative
-		left 1145px
+		float right
+		margin-right 30px
+		
 
 	.btnAtras
 		position relative
-		left 90px
+		margin-left 30px
 
 @import "responsive.styl"

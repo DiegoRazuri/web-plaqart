@@ -2,11 +2,16 @@
 @media screen and (min-width:480px)
 	body
 		#portafolio
-			height 990px
-			#vitrina
-					width 500px
-
+			height 580px
+			#marco
+				width 402px
+				margin 0 auto
+				
+				#vitrina
+					width 402px
+						
 					.vinetas
+						width 201px
 						height 340px
 						a
 							figure
@@ -14,7 +19,20 @@
 									height 340px
 
 							.wrapperVinetas
-								top -344px
+								top -384px
+
+		.btnAvanzar, .btnAtras
+			top -10px
+
+			img
+				width 50px
+
+		.btnAvanzar
+			margin-right 40px
+		
+
+		.btnAtras
+			margin-left 40px
 
 
 @media screen and (min-width:768px)
@@ -45,11 +63,13 @@
 
 
 		#portafolio
-			height 590px
-			#vitrina
-				width 100%
-				.vinetas
-					width 25%
+			height 610px
+			#marco
+				width 768px
+				#vitrina
+					width 768px
+					.vinetas
+						width 192px
 
 		#promociones
 			height 610px
@@ -108,6 +128,19 @@
 
 		.titulosSegmentos
 			font-size 1.3em
+
+		.btnAvanzar, .btnAtras
+			top 80px
+
+			img
+				width 40px
+
+		.btnAvanzar
+			margin-right 40px
+		
+
+		.btnAtras
+			margin-left 40px
 
 @media screen and (min-width : 1280px)
 	body
@@ -220,7 +253,7 @@
 							font-size 0.8em	
 
 		#portafolio
-			height 640px
+			height 690px
 
 			.listaBotonesPorta
 				width 1000px
@@ -229,26 +262,38 @@
 				.btnUltimos
 					border-top none
 
-			#vitrina
+			#marco
 				width 1000px
+				height 380px
+				
+				#vitrina
+					width 1000px
+					height 380px
 
-				.vinetas
-					height 340px
-					a
-						figure
-							img	
-								height 340px
+					.vinetas
+						height 380px
+						width 250px
+						a
+							figure
+								img	
+									height 380px
 
-						.wrapperVinetas
-							top -344px
+							.wrapperVinetas
+								top -384px
+								.descripcion
+									top -228px
+
+			.wrapperPaginacionPorta
+				top 160px
 
 		#promociones
+			display block
 			.contenedorBannerPromo
-				width 800px
+				width 950px
 				margin 0 auto
 
 				.slidePorta
-					width 800px
+					width 950px
 
 		#redes
 			height 480px
@@ -309,5 +354,26 @@
 
 		.titulosSegmentos
 			font-size 2.5em
+
 		.btnAvanzar, .btnAtras
-			display inline-block
+			top -100px
+
+			img
+				width 50px
+
+		.btnAvanzar
+			margin-right 50px
+		
+
+		.btnAtras
+			margin-left 50px
+
+		.btnsPromos
+			position relative
+			top 250px
+
+		.btnPromoAvanzar
+			margin-right 150px
+
+		.btnPromoAtras
+			margin-left 150px

@@ -13,6 +13,7 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
         <script src="js/vendor/ui/jquery-ui.js"></script>
+        <script src="js/vendor/underscore.js"></script>
 
     </head>
     <body>
@@ -47,7 +48,7 @@
                     </li>
                     <li id="btnNav3" class="blqmovil">
                         <div class="bloqClaro btnSelec" id="btnNavAni3">
-                            <a href="http://www.plaqart.com/#portafolioAncla" class="scrolleable">
+                            <a href="#portafolio" class="scrolleable">
                                 <span class="lineBtn3 btnrayas"></span>
                                 <h4>NUESTRO<br>PORTAFOLIO</h4>
                             </a>
@@ -68,9 +69,9 @@
         <section id="contenedor">
             <div class="wrapperPrincipal">
                 <div id="descripcionWork" class="descripcionTrabajo">
-                    <h2>IMPRESION DE PAPELERIA</h2>
-                    <p>Scens es una empresa que cuenta con colocaciones de productos en distinguidos supermercados. Basandonos en su grupo objetivo, hemos diseñado e impreso para ellos brochures, volantes, tarjetas, logotipos, banners, vallas publicitarias, anaqueles, viniles decorativos y más para sus activaciones. Te aseguramos un trabajo impecable, que elevará el valor de tu marca.</p>
-                    <h1>IMPRESION Y DISEÑO PAPELERIA<br> SCENS</h1>
+                    <h2>UNA MARCA QUE CONECTA CON SUS CONSUMIDORES</h2>
+                    <p>Scens es una empresa que cuenta con una línea de distinguidos productos con la misión de mejorar la salud y la vida de sus consumidores. Analizando su grupo objetivo, hemos diseñado e impreso para ellos brochures, volantes, tarjetas, banners, vallas publicitarias, anaqueles, viniles decorativos y más para sus activaciones. Te garantizamos un trabajo impecable, que le dará valor a tu marca.</p>
+                    <h1>DISEÑO GRÁFICO / IMPRENTA / PUBLICIDAD<br> SCENS</h1>
                 </div>
                 <div class="bloques" id="figura1">
                     <figure>
@@ -104,6 +105,42 @@
                 </div>
             </div>
 
+            <section id="portafolio">
+                <span id="portafolioAncla"></span>
+                <h4 class="titulosSegmentos">MIRA NUESTRO PORTAFOLIO</h4>
+                <figure class="delineado01"><img src="img/Subraya02.png"></figure>
+                <!--<figure class="btnAtras">
+                    <img src="img/PortafolioFlechaIzquierdaOff.png">
+                </figure>
+                <figure class="btnAvanzar">
+                    <img src="img/PortafolioFlechaDerechaOff.png">   
+                </figure>-->
+                <ul class="listaBotonesPorta">
+                    <li class="botonesPorta ui-selected" id="btnDiseno">Diseño</li>
+                    <li class="botonesPorta" id="btnWeb">Desarrollo Web</li>
+                    <li class="botonesPorta btnUltimos" id="btnImp">Imprenta</li>
+                    <li class="botonesPorta btnUltimos botonesPortaUltimo" id="btnMerch">Merchandising</li>
+                </ul>
+                <div id="marco">
+                    <ul id="vitrina">
+                        
+                    <!-- ACA SE INSERTA EL CONTENIDO DE LA PLANTILLA DE UNDERSCORE -->
+
+                    </ul>
+                </div>
+                <!--<div class="wrapperPaginacionPorta">
+                    <span class="paginacionPorta paginaVisiblePorta" id="slide1pagPorta"></span>
+                    <span class="paginacionPorta" id="slide2pagPorta"></span>
+                    <span class="paginacionPorta" id="slide3pagPorta"></span>
+                </div>-->
+                <figure class="btnAtras" id="prev">
+                    <img src="img/PortafolioFlechaIzquierdaOff.png">
+                </figure>
+                <figure class="btnAvanzar" id="next">
+                    <img src="img/PortafolioFlechaDerechaOff.png">   
+                </figure>
+            </section>
+
         </section>
         <section id="footer">
             <div>
@@ -117,6 +154,30 @@
 
         <script src="js/main.js"></script>
         <script src="js/script.js"></script>
+
+        <script type="text/template" id="items-template">
+            <% _.each(conexionTemplate, function(variableLlave){ %>
+                <li class="vinetas" id="viñeta1">
+                    <a target="_blank" href= <%= variableLlave.enlace%>>
+                        <figure class="lienzo">
+                            <img src=<%= variableLlave.img%> class="foto" alt="trabajos de plaqart" title="trabajos de plaqart">
+                        </figure>
+                        <div class="wrapperVinetas">
+                            <div class="sombra">
+                            </div>
+                            <span class="descripcion">
+                                <h5 class="trabajo"><%= variableLlave.titulo %></h5>
+                                <p class="categoria"><%= variableLlave.servicio %></p>
+                                <p class="cliente"><%= variableLlave.cliente%></p>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+
+            <% }); %>
+        </script>
+        <script type="text/javascript" src="js/carrusel.js"></script>
+
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
